@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="form-container">
+            <form id="surveyForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+        
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+        
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+        
+                <label for="country">Country:</label>
+                <select id="country" required>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="IND">IND</option>
+                    <option value="AFG">AFG</option>
+                    <option value="ALB">ALB</option>
+                    <option value="BGD">BGD</option>
+                    <option value="AUS">AUS</option>
+                    <option value="BRA">BRA</option>
+                    <option value="CHN">CHN</option>
+                    <option value="DEU">DEU</option>
+                    <option value="HKG">HKG</option>
+                    
+                </select>
+
+                <label>Gender:</label>
+        <label class="gender-label"><input type="checkbox" name="gender" value="Male"> Male</label>
+        <label class="gender-label"><input type="checkbox" name="gender" value="Female"> Female</label>
+        <label class="gender-label"><input type="checkbox" name="gender" value="Other"> Other</label>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+</div>
+
+<div id="popup" class="popup">
+    <h2>Form Submission</h2>
+    <div id="popup-content"></div>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="index.js"></script>
+    </body>
+
+</html>
